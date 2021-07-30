@@ -1,6 +1,7 @@
 import React from 'react';
 import './Product.css';
 import Button from '@material-ui/core/Button';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { useStateValue } from './StateProvider';
 
 function Product({ id, title, image, price, rating }) {
@@ -37,7 +38,7 @@ function Product({ id, title, image, price, rating }) {
 
       <img src={image} alt='' />
 
-      <Button onClick={addToCart} variant='contained' size='small'>
+      <Button onClick={addToCart} startIcon={<ShoppingCartIcon />} size='small'>
         Add to Cart
       </Button>
     </div>
