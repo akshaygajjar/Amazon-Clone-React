@@ -1,10 +1,10 @@
 import React from 'react';
-import './Header.css';
+import './Header.scss';
 import SearchIcon from '@material-ui/icons/Search';
-import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { Link } from 'react-router-dom';
-import { useStateValue } from './StateProvider';
-import { auth } from './firebase';
+import { useStateValue } from '../../StateProvider';
+import { auth } from '../../firebase';
 
 function Header() {
   const [{ cart, user }, dispatch] = useStateValue();
@@ -54,7 +54,7 @@ function Header() {
 
         <Link to='/checkout'>
           <div className='header__optionBasket'>
-            <ShoppingBasketIcon />
+            <ShoppingCartIcon />
             <span className='header__optionLineTwo header__basketCount'>
               {cart?.length}
             </span>

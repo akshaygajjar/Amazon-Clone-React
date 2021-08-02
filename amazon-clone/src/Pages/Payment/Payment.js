@@ -1,10 +1,10 @@
 import React from 'react';
-import './Payment.css';
-import CheckoutProduct from './CheckoutProduct';
+import './Payment.scss';
+import CheckoutProduct from '../../Components/Checkout Product/CheckoutProduct';
 import CurrencyFormat from 'react-currency-format';
-import { getCartTotal } from './reducer';
+import { getCartTotal } from '../../reducer';
 import { Link, useHistory } from 'react-router-dom';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../../StateProvider';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 
 function Payment() {

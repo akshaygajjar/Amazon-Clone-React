@@ -1,8 +1,8 @@
 import React from 'react';
-import './Product.css';
+import './Product.scss';
 import Button from '@material-ui/core/Button';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../../StateProvider';
 
 function Product({ id, title, image, price, rating }) {
   const [{ cart }, dispatch] = useStateValue();

@@ -1,6 +1,6 @@
 import React from 'react';
-import './CheckoutProduct.css';
-import { useStateValue } from './StateProvider';
+import './CheckoutProduct.scss';
+import { useStateValue } from '../../StateProvider';
 import Button from '@material-ui/core/Button';
 import RemoveShoppingCartIcon from '@material-ui/icons/RemoveShoppingCart';
 
