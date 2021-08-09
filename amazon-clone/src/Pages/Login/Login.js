@@ -1,13 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Login.scss';
 import { auth } from '../../firebase';
 import { Link, useHistory } from 'react-router-dom';
+import { useStateValue } from '../../StateProvider';
 
 function Login() {
   const history = useHistory();
-
+  const prevPath = history.location.state?.from;
+  //  console.log('previous path: ', prevPath);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [{ user }, dispatch] = useStateValue();
+
+  useEffect(() => {
+    if (user) {
+      if (prevPath === 'checkoutPath') {
+        history.push('/payment');
+      } else {
+        history.replace('/');
+      }
+    }
+  }, [user]);
 
   const signIn = (e) => {
     e.preventDefault();
@@ -15,7 +28,18 @@ function Login() {
     auth
       .signInWithEmailAndPassword(email, password)
       .then((auth) => {
-        history.push('/');
+        if (auth) {
+          dispatch({
+            type: 'SET_USER',
+            user: auth,
+          });
+
+          if (prevPath === 'checkoutPath') {
+            history.push('/payment');
+          } else {
+            history.replace('/');
+          }
+        }
       })
       .catch((error) => alert(error.message));
   };
@@ -26,10 +50,16 @@ function Login() {
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((auth) => {
-        console.log('User created:', auth);
-
         if (auth) {
-          history.push('/');
+          dispatch({
+            type: 'SET_USER',
+            user: auth,
+          });
+          if (prevPath === 'checkoutPath') {
+            history.push('/payment');
+          } else {
+            history.push('/');
+          }
         }
       })
       .catch((error) => alert(error.message));
