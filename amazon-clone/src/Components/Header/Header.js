@@ -1,10 +1,10 @@
 import React from 'react';
-import './Header.scss';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { Link } from 'react-router-dom';
-import { useStateValue } from '../../StateProvider';
 import { auth } from '../../firebase';
+import { useStateValue } from '../../Reducers/StateProvider';
+import './Header.scss';
 
 function Header() {
   const [{ cart, user }, dispatch] = useStateValue();
@@ -50,11 +50,6 @@ function Header() {
             </div>
           </Link>
         )}
-
-        <div className='header__option'>
-          <span className='header__optionLineOne'>Your</span>
-          <span className='header__optionLineTwo'>Prime</span>
-        </div>
 
         <Link to='/checkout'>
           <div className='header__optionBasket'>

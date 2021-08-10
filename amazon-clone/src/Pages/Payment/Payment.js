@@ -1,17 +1,21 @@
 import React from 'react';
-import './Payment.scss';
-import CheckoutProduct from '../../Components/Checkout Product/CheckoutProduct';
 import CurrencyFormat from 'react-currency-format';
-import { getCartTotal } from '../../reducer';
+import CheckoutProduct from '../../Components/Checkout Product/CheckoutProduct';
+import { getCartTotal } from '../../Reducers/reducer';
+import { useStateValue } from '../../Reducers/StateProvider';
 import { Link, useHistory } from 'react-router-dom';
-import { useStateValue } from '../../StateProvider';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
+import './Payment.scss';
 
 function Payment() {
   const [{ cart, user }, dispatch] = useStateValue();
 
   const stripe = useStripe();
   const elements = useElements();
+
+  const getNotify = () => {
+    if (cart) alert('❤ Payment Successful !!!');
+  };
 
   return (
     <div className='payment'>
@@ -65,9 +69,7 @@ function Payment() {
                   thousandSeparator={true}
                   prefix={'$'}
                 />
-                <button>
-                  <span>Buy Now</span>
-                </button>
+                <button onClick={getNotify}>Buy Now</button>
               </div>
             </form>
           </div>

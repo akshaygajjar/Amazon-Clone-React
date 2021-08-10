@@ -1,9 +1,9 @@
 import React from 'react';
-import './Checkout.scss';
 import Subtotal from '../../Components/Subtotal/Subtotal';
-import CheckoutProduct from '../../Components/Checkout Product/CheckoutProduct';
-import { useStateValue } from '../../StateProvider';
 import cartEmpty from '../../Assets/Images/Cart_Empty.png';
+import CheckoutProduct from '../../Components/Checkout Product/CheckoutProduct';
+import { useStateValue } from '../../Reducers/StateProvider';
+import './Checkout.scss';
 
 function Checkout() {
   const [{ cart, user }, dispatch] = useStateValue();

@@ -1,9 +1,9 @@
 import React from 'react';
-import './Subtotal.scss';
 import CurrencyFormat from 'react-currency-format';
 import { useHistory } from 'react-router-dom';
-import { useStateValue } from '../../StateProvider';
-import { getCartTotal } from '../../reducer';
+import { useStateValue } from '../../Reducers/StateProvider';
+import { getCartTotal } from '../../Reducers/reducer';
+import './Subtotal.scss';
 
 function Subtotal() {
   const history = useHistory();

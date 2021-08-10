@@ -1,9 +1,9 @@
 import React from 'react';
-import './Product.scss';
 import Button from '@material-ui/core/Button';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import { useStateValue } from '../../StateProvider';
+import { useStateValue } from '../../Reducers/StateProvider';
 import { ToastContainer, toast } from 'react-toastify';
+import './Product.scss';
 import 'react-toastify/dist/ReactToastify.css';
 
 function Product({ id, title, image, price, rating }) {

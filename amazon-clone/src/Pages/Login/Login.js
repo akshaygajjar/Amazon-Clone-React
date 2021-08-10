@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './Login.scss';
 import { auth } from '../../firebase';
+import { useStateValue } from '../../Reducers/StateProvider';
 import { Link, useHistory } from 'react-router-dom';
-import { useStateValue } from '../../StateProvider';
+import './Login.scss';
 
 function Login() {
   const history = useHistory();

@@ -30,7 +30,7 @@
 
   &__searchIcon {
     padding: 5px;
-    height: 22px !important;
+    height: 22px;
     background-color: #cd9042;
   }
 
@@ -65,5 +65,13 @@
   &__basketCount {
     margin-left: 10px;
     margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    &__logo {
+      width: 70px;
+    }
   }
 }

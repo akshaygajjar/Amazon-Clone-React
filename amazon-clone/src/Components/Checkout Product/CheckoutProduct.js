@@ -1,9 +1,9 @@
 import React from 'react';
-import './CheckoutProduct.scss';
-import { useStateValue } from '../../StateProvider';
 import Button from '@material-ui/core/Button';
 import RemoveShoppingCartIcon from '@material-ui/icons/RemoveShoppingCart';
+import { useStateValue } from '../../Reducers/StateProvider';
 import { ToastContainer, toast } from 'react-toastify';
+import './CheckoutProduct.scss';
 import 'react-toastify/dist/ReactToastify.css';
 
 function CheckoutProduct({ id, image, title, price, rating, hideButton }) {

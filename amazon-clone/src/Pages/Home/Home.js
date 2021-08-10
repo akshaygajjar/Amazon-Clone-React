@@ -1,6 +1,6 @@
 import React from 'react';
-import './Home.scss';
 import Product from '../../Components/Product/Product';
+import './Home.scss';
 
 function Home() {
   return (
@@ -15,21 +15,21 @@ function Home() {
         <div className='home__row'>
           <Product
             id='6'
-            title='Samsung 163 cm (65 inches) 4K Ultra HD Smart QLED TV QA65Q60TAKXXL (Black) (2020 Model)'
+            title='Samsung 163 4K Ultra HD Smart (Black)'
             price={1880.7}
             rating={3}
             image='https://images-na.ssl-images-amazon.com/images/I/81Qxjm42bOL._SX679_.jpg'
           />
           <Product
             id='5'
-            title='Apple iPad Pro with Apple M1 chip (12.9-inch/32.77 cm, Wi-Fi, 2TB) - Silver (5th Generation)'
+            title='Apple iPad Pro with Apple M1 chip'
             price={2671.93}
             rating={4}
             image='https://images-na.ssl-images-amazon.com/images/I/815KnP2wjDS._SX679_.jpg'
           />
           <Product
             id='2'
-            title='ASUS ROG Strix Scar 17 (2020), 17.3" FHD 300Hz/3ms, Intel Core i9-10980HK 10th Gen, RTX 2080 Super GDDR6 8GB Graphics, Gaming Laptop'
+            title='ASUS ROG Strix Scar 17, Intel Core i9, 10th Gen, Gaming Laptop'
             price={3627.06}
             rating={4}
             image='https://images-na.ssl-images-amazon.com/images/I/81ESehPEHLL._SX679_.jpg'
@@ -39,7 +39,7 @@ function Home() {
         <div className='home__row'>
           <Product
             id='3'
-            title='Apple Watch Series 6 (GPS + Cellular, 44mm) - Gold Stainless Steel Case with Deep Navy Sport Band'
+            title='Apple Watch Series 6 with Deep Navy Sport Band'
             price={913.48}
             rating={5}
             image='https://images-na.ssl-images-amazon.com/images/I/71C9mkSFYVS._SX466_.jpg'
@@ -47,7 +47,7 @@ function Home() {
 
           <Product
             id='4'
-            title='boAt Stone 1400 30W Bluetooth Speaker with 7 Hours Playback, Bluetooth v4.2, IPX5 Water Resistance, Type C Charging and Carry Strap'
+            title='boAt Stone Bluetooth Speaker'
             price={67.15}
             rating={3}
             image='https://images-na.ssl-images-amazon.com/images/I/71DfzuViKGL._SY450_.jpg'
