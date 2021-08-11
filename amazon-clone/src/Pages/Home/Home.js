@@ -72,7 +72,7 @@ function Home() {
           />
           <Product
             id='1'
-            title='POWER TRONS Electric Bicycle with 7 Speed Gears and Detachable Battery (White, Blue)'
+            title='POWER TRONS Electric Bicycle with 7 Speed Gears and Detachable Battery (white, Blue)'
             price={537.26}
             rating={4}
             image='https://images-na.ssl-images-amazon.com/images/I/81-kJlBIu0S._SX679_.jpg'

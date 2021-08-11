@@ -1,7 +1,7 @@
 import React from 'react';
 import Subtotal from '../../Components/Subtotal/Subtotal';
 import cartEmpty from '../../Assets/Images/Cart_Empty.png';
-import CheckoutProduct from '../../Components/Checkout Product/CheckoutProduct';
+import CheckoutProduct from '../../Components/CheckoutProduct/CheckoutProduct';
 import { useStateValue } from '../../Reducers/StateProvider';
 import './Checkout.scss';
 

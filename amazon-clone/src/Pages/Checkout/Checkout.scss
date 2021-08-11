@@ -1,7 +1,9 @@
+@import '../../Scss/variables';
+
 .checkout {
   display: flex;
   padding: 20px;
-  background-color: white;
+  background-color: $home-secondary-color-main;
   height: max-content;
 
   &__ad {

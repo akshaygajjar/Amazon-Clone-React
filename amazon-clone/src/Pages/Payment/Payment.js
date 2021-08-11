@@ -1,6 +1,6 @@
 import React from 'react';
 import CurrencyFormat from 'react-currency-format';
-import CheckoutProduct from '../../Components/Checkout Product/CheckoutProduct';
+import CheckoutProduct from '../../Components/CheckoutProduct/CheckoutProduct';
 import { getCartTotal } from '../../Reducers/reducer';
 import { useStateValue } from '../../Reducers/StateProvider';
 import { Link, useHistory } from 'react-router-dom';

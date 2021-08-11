@@ -1,11 +1,13 @@
+@import '../../Scss/variables';
+
 .payment {
-  background-color: white;
+  background-color: $home-secondary-color-main;
 
   &__container > h1 {
     text-align: center;
     padding: 10px;
     font-weight: 400;
-    background-color: rgb(234, 237, 237);
+    background-color: $home-primary-color-main;
     border-bottom: 1px solid lightgray;
 
     & > a {

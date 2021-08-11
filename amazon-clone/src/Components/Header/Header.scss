@@ -1,8 +1,10 @@
+@import '../../Scss/variables';
+
 .header {
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #131921;
+  background-color: $header-primary-color-main;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -44,7 +46,7 @@
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
-    color: white;
+    color: $home-secondary-color-main;
   }
 
   &__optionLineOne {
@@ -59,7 +61,7 @@
   &__optionBasket {
     display: flex;
     align-items: center;
-    color: white;
+    color: $home-secondary-color-main;
   }
 
   &__basketCount {

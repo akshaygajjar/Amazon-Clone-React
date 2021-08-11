@@ -1,0 +1,18 @@
+// Partials scss files
+@import './Scss/reset';
+@import './Scss/basic';
+@import './Scss/mixins';
+@import './Scss/variables';
+
+// Components scss files
+@import './Components/Header/Header.scss';
+@import './Components/Footer/Footer.scss';
+@import './Components/CheckoutProduct/CheckoutProduct.scss';
+@import './Components/Product/Product.scss';
+@import './Components/Subtotal/Subtotal.scss';
+
+// Pages scss files
+@import './Pages/Login/Login.scss';
+@import './Pages/Home/Home.scss';
+@import './Pages/Checkout/Checkout.scss';
+@import './Pages/Payment/Payment.scss';
